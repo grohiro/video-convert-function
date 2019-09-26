@@ -30,3 +30,10 @@ lambda-all:
 	make lambda-update
 	make lambda-run
 
+ffmpeg-install:
+	curl -O https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
+	tar xvf ffmpeg-release-amd64-static.tar.xz
+	cp -f ffmpeg-4.2.1-amd64-static/ffmpeg bin/ffmpeg
+	cp -f ffmpeg-4.2.1-amd64-static/ffprobe bin/ffprobe
+	rm -f ffmpeg-release-amd64-static.tar.xz
+	rm -rf ffmpeg-4.2.1-amd64-static/
