@@ -1,1 +1,9 @@
-`bin/` に `ffmpeg` と `ffprobe` を入れる。
+# video-convert-function
+
+## Install
+
+```bash
+$ npm install
+$ make ffmpeg-install
+```
+
